@@ -1,0 +1,64 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <script src="script.js" async></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+
+  <div class="container">
+    <form id="form">
+      <div class="main">
+        <div class="part">
+          <h2 class="title head1">DAY</h2>
+          <input type="number" name="date" id="date" placeholder="DD">
+          <div class="day dis1"></div>
+        </div>
+        <div class="part">
+          <h2 class="title head2">MONTH</h2>
+          <input type="number" name="month" id="month" placeholder="MM" required>
+          <div class="month dis1"></div>
+        </div>
+        <div class="part">
+          <h2 class="title head3">YEAR</h2>
+          <input type="number" name="year" id="year" placeholder="YYYY"  required>
+          <div class="year dis1"></div>
+        </div>
+      </div>
+      <div class="line">
+        <div class="le"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="age()" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </div>
+    </form>
+    <div class="display">
+      <div class="dis">
+        <span id="years"><i>--</i></span>
+        <h2>years</h2>
+      </div>
+      <div class="dis">
+        <span id="months"><i>--</i></span>
+        <h2>months</h2>
+      </div>
+      <div class="dis">
+        <span id="days"><i>--</i></span>
+        <h2>days</h2>
+      </div>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">EMMANUEL DALITSO BANDA</a>.
+  </div>
+</body>
+</html>

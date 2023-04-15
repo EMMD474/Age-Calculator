@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 86%);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border-bottom-right-radius: 20%;
+}
+.container form {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin: 30px 40px 0 40px;
+}
+.container form .main {
+  display: flex;
+}
+.container form .part{
+  display: block;
+  margin-right: 20px
+}
+.container form .part h2{
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  color: hsl(0, 1%, 44%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.container form .part input{
+  width: 120px;
+  height: 45px;
+  font-size: 18px;
+  text-indent: 10px;
+  color: hsl(0, 0%, 8%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+}
+#date.active{
+  border: 1px solid hsl(0, 100%, 67%);
+}
+#month.active{
+  border: 1px solid hsl(0, 100%, 67%);
+}
+#year.active{
+  border: 1px solid hsl(0, 100%, 67%);
+}
+.dis1 {
+  font-size: 12px;
+  font-weight: 100;
+  color: hsl(0, 100%, 67%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.title.head1.active {
+  color: hsl(0, 100%, 67%);
+}
+.title.head2.active {
+  color: hsl(0, 100%, 67%);
+}
+.title.head3.active {
+  color: hsl(0, 100%, 67%);
+}
+.line {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  left: -420px;
+}
+.line .le {
+  border-bottom: 2px solid hsl(0, 0%, 86%);
+  width: 450px;
+  height: 20px
+}
+svg {
+  border-radius: 50%;
+  padding: 11px 10px;
+  background: hsl(259, 100%, 65%);
+}
+.container .display{
+  margin: 50px 0 0 40px;
+}
+.container .dis {
+  display: flex;
+  align-items: center;
+}
+.container .display h2{
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: hsl(0, 0%, 8%);
+}
+.container .display span{
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: hsl(259, 100%, 65%);
+  margin-right: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 350px;
+    height: auto;
+  }
+  .container form {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 30px 20px 0 20px;
+  }
+  .container form .main {
+    display: flex;
+    margin-left: 23px ;
+  }
+  .container form .part h2{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+  .container form .part input{
+    width: 70px;
+    height: 35px;
+    font-size: 14px; 
+  }
+  .line {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -10px;
+    left: -290px;
+  }
+  .line .le {
+    border-bottom: 2px solid hsl(0, 0%, 86%);
+    width: 290px;
+    height: 20px
+  }
+  .line svg {
+    position: fixed;
+  }
+  .container .display{
+    margin: 70px 0 0 40px;
+  }
+  .container .dis {
+    display: flex;
+    align-items: center;
+  }
+  .container .display h2{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: hsl(0, 0%, 8%);
+  }
+  .container .display span{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: hsl(259, 100%, 65%);
+    margin-right: 10px;
+  }
+}
